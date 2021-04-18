@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     borderRadius: "0",
+    cursor: 'pointer'
   },
   cardMedia: {
     height: '35vh',
@@ -47,7 +48,7 @@ function Home({ posts,  }) {
                   <CardMedia
                         className={classes.cardMedia}
                         image={post.product_image[0].image}
-                        title="Image title"
+                        title={ post.product_image[0].alt_text }
                         alt={post.product_image[0].alt_text}
                       />
                     <CardContent>
