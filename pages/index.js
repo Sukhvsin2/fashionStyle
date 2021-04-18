@@ -41,7 +41,7 @@ function Home({ posts,  }) {
         <Container className={classes.cardGrid} maxWidth="lg">
           <Grid container spacing={2}>
             {posts.map((post) => (
-              <Link key={post.id} href={`product/${encodeURIComponent(post.slug)}`}>
+              <Link key={post.id} href={`products/${encodeURIComponent(post.slug)}`}>
                 <Grid item xs={12} sm={6} md={4} lg={3} >
                   <Card className={classes.card} elevation={1}>
                   <CardMedia
