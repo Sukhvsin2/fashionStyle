@@ -83,9 +83,6 @@ function Product({product}) {
                                 ${product.regular_price}
                             </Box>
                             <Box>
-                                {product.description}
-                            </Box>
-                            <Box>
                                 Free Delivery & Returns (Ts&Cs apply)
                             </Box>
                         </Paper>
