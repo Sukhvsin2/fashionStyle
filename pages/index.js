@@ -26,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "0",
   },
   cardMedia: {
-    paddingTop: "140%",
+    height: '35vh',
+    objectFit: 'contain'
   },
 }));
 
@@ -41,7 +42,7 @@ function Home({ posts,  }) {
           <Grid container spacing={2}>
             {posts.map((post) => (
               <Link key={post.id} href={`product/${encodeURIComponent(post.slug)}`}>
-                <Grid item xs={6} sm={4} md={3}>
+                <Grid item xs={12} sm={6} md={4} lg={3} >
                   <Card className={classes.card} elevation={1}>
                   <CardMedia
                         className={classes.cardMedia}
